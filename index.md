@@ -47,6 +47,9 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
+<h2>Registration</h2>
+<a href="https://www.eventbrite.com/e/software-carpentry-workshop-221-222019-registration-55654564300">Reserve your seat here</a>.  UCSB Carpentry Workshops sell out!  Please make sure 
+that you can commit to the full two days of learning.
 
 
 <h2 id="general">General Information</h2>
