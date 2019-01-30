@@ -7,7 +7,7 @@ address: "UCSB Santa Barbara, CA 93106"      # full street address of workshop (
 country: "U.S.A."     # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "34.414354, -119.845506"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "Feb 21-22,2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Feb 21-22, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am to 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2019-02-21      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2019-02-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
@@ -47,10 +47,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
-<h2>Registration</h2>
-<a href="https://www.eventbrite.com/e/software-carpentry-workshop-221-222019-registration-55654564300">Reserve your seat here</a>.  UCSB Carpentry Workshops sell out!  Please make sure 
-that you can commit to the full two days of learning.
-
 
 <h2 id="general">General Information</h2>
 
@@ -67,6 +63,11 @@ that you can commit to the full two days of learning.
 {% elsif page.carpentry == "lc" %}
   {% include lc/intro.html %}
 {% endif %}
+
+<h2>Registration</h2>
+<p><a href="https://www.eventbrite.com/e/software-carpentry-workshop-221-222019-registration-55654564300">Reserve your seat here</a>.  UCSB Carpentry Workshops sell out!  Please make sure 
+that you can commit to the full two days of learning.</p>
+
 
 {% comment %}
   AUDIENCE
