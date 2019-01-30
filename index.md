@@ -47,10 +47,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
-<h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
-and our administrator may contact you if we need any extra information.</h4>
+
 
 <h2 id="general">General Information</h2>
 
@@ -185,12 +182,12 @@ and our administrator may contact you if we need any extra information.</h4>
 
 <hr/>
 
-{% comment %} 
- SURVEYS - DO NOT EDIT SURVEY LINKS 
+{% comment %}
+ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
+{% if site.carpentry == "swc" %}
 <p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif site.carpentry == "dc" %}
@@ -424,10 +421,10 @@ and our administrator may contact you if we need any extra information.</h4>
     <div class="col-md-4">
       <h4 id="git-macosx">macOS</h4>
       <p>
-        Please open the Terminal app, type <code>git --version</code> and press 
-        <kbd>Enter</kbd>/<kbd>Return</kbd>. If it's not installed already, 
-        follow the instructions to <code>Install</code> the "command line 
-        developer tools". <strong>Don't click</strong> "Get Xcode", because that will 
+        Please open the Terminal app, type <code>git --version</code> and press
+        <kbd>Enter</kbd>/<kbd>Return</kbd>. If it's not installed already,
+        follow the instructions to <code>Install</code> the "command line
+        developer tools". <strong>Don't click</strong> "Get Xcode", because that will
         take too long and is not necessary for our Git lesson.
         After installing these tools, there won't be anything in your <code>/Applications</code>
         folder, as they and Git are command line programs.
@@ -436,7 +433,7 @@ and our administrator may contact you if we need any extra information.</h4>
         <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
         Because this installer is not signed by the developer, you may have to
         right click (control click) on the .pkg file, click Open, and click
-        Open in the pop-up dialog. You can watch 
+        Open in the pop-up dialog. You can watch
         <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">a video tutorial about this case</a>.
       </p>
     </div>
@@ -461,8 +458,8 @@ and our administrator may contact you if we need any extra information.</h4>
     color-coding of key words. The default text editor on macOS and
     Linux is usually set to Vim, which is not famous for being
     intuitive. If you accidentally find yourself stuck in it, hit
-    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd> 
-    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to 
+    the <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>Q</kbd>+<kbd>!</kbd>
+    (colon, lower-case 'q', exclamation mark), then hitting <kbd>Return</kbd> to
     return to the shell.
   </p>
 
@@ -625,9 +622,9 @@ and our administrator may contact you if we need any extra information.</h4>
         from <a href="https://cran.r-project.org/index.html">CRAN</a>.
         Also, please install the
         <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio IDE</a>.
-        Note that if you have separate user and admin accounts, you should run the 
-        installers as administrator (right-click on .exe file and select "Run as 
-        administrator" instead of double-clicking). Otherwise problems may occur later, 
+        Note that if you have separate user and admin accounts, you should run the
+        installers as administrator (right-click on .exe file and select "Run as
+        administrator" instead of double-clicking). Otherwise problems may occur later,
         for example when installing R packages.
       </p>
     </div>
