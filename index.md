@@ -66,7 +66,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <h2>Registration</h2>
 <p><a href="https://www.eventbrite.com/e/software-carpentry-workshop-221-222019-registration-55654564300">Reserve your seat here</a>.  UCSB Carpentry Workshops sell out!  Please make sure 
-that you can commit to the full two days of learning. To learn about future Carpentry workshops, sign up for the mailing list here: <a href="https://groups.google.com/a/library.ucsb.edu/forum/#!forum/carpentry">
+that you can commit to the full two days of learning. To learn about future Carpentry workshops, sign up for the mailing list here: <a href="https://groups.google.com/a/library.ucsb.edu/forum/#!forum/carpentry">Join UCSB Carpentry Workshop mailing list</a>.
 </p>
 
 
