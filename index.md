@@ -36,7 +36,8 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
 {% endcomment %}
 <p id="Registration">
   <strong>Registration:</strong>
-  This workshop is for FACULTY ONLY. Please register only if you are a faculty member affiliated with UC Santa Barbara. Please make sure that you can commit to the full two days of learning. To learn about future Carpentry workshops, sign up for the mailing list here: <a href="https://groups.google.com/a/library.ucsb.edu/forum/#!forum/carpentry">Join UCSB Carpentry Workshop mailing list</a>.
+  This workshop is for FACULTY ONLY. Please register only if you are a faculty member affiliated with UC Santa Barbara. Please make sure that you can commit to the full two days of learning. To learn about future Carpentry workshops and to be added to our mailing list, visit our <a href="https://www.library.ucsb.edu/software-carpentry">UCSB Carpentry Workshop</a> page.
+</p>  
   
 {% comment %}
   EVENTBRITE
