@@ -30,6 +30,15 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
 {% endcomment %}
 
 {% comment %}
+  REGISTRATION
+
+  This block includes the registration information.
+{% endcomment %}
+<p id="Registration">
+  <strong>Registration:</strong>
+  This workshop is for FACULTY ONLY. Please register only if you are a faculty member affiliated with UC Santa Barbara. Please make sure that you can commit to the full two days of learning. To learn about future Carpentry workshops, sign up for the mailing list here: <a href="https://groups.google.com/a/library.ucsb.edu/forum/#!forum/carpentry">Join UCSB Carpentry Workshop mailing list</a>.
+  
+{% comment %}
   EVENTBRITE
 
   This block includes the Eventbrite registration widget if
@@ -47,7 +56,6 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
 </iframe>
 {% endif %}
 
-
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -63,11 +71,6 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
 {% elsif page.carpentry == "lc" %}
   {% include lc/intro.html %}
 {% endif %}
-
-<h2>Registration</h2>
-UCSB Carpentry Workshops sell out!  Please make sure 
-that you can commit to the full two days of learning. To learn about future Carpentry workshops, sign up for the mailing list here: <a href="https://groups.google.com/a/library.ucsb.edu/forum/#!forum/carpentry">Join UCSB Carpentry Workshop mailing list</a>.
-
 
 {% comment %}
   AUDIENCE
@@ -158,7 +161,7 @@ that you can commit to the full two days of learning. To learn about future Carp
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
-
+  
 {% comment %}
   CONTACT EMAIL ADDRESS
 
