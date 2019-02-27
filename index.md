@@ -102,7 +102,7 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>,
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>, or the <a href="https://map.ucsb.edu/location?fid=8799&type=2">UCSB Map<a>.
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>, or the <a href="https://map.ucsb.edu/location?fid=8799&type=2">UCSB Map</a>.
 </p>
 {% endif %}
 
