@@ -35,7 +35,7 @@ applications may prefer the 'wide' format. However, many of `R`'s functions have
 been designed assuming you have 'long' format data. This tutorial will help you
 efficiently transform your data regardless of original format.
 
-![](../fig/14-tidyr-fig1.png)
+![](../../fig/14-tidyr-fig1.png)
 
 These data formats mainly affect readability. For humans, the wide format is
 often more intuitive since we can often see more of the data on the screen due
@@ -182,13 +182,13 @@ str(gap_wide)
 ~~~
 {: .output}
 
-![](../fig/14-tidyr-fig2.png)
+![](../../fig/14-tidyr-fig2.png)
 
 The first step towards getting our nice intermediate data format is to
 convert from the wide to the long format. The `tidyr` function `gather()` will
 'gather' your observation variables into a single variable.
 
-![](../fig/14-tidyr-fig3.png)
+![](../../fig/14-tidyr-fig3.png)
 
 
 ~~~
@@ -223,7 +223,7 @@ that starts with the desired character string. Gather also allows the alternativ
 syntax of using the `-` symbol to identify which variables are not to be
 gathered (i.e. ID variables)
 
-![](../fig/14-tidyr-fig4.png)
+![](../../fig/14-tidyr-fig4.png)
 
 
 ~~~

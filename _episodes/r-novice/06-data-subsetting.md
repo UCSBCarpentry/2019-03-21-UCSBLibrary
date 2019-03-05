@@ -694,11 +694,11 @@ When you use `!=`, R tries to compare each element
 of the left argument with the corresponding element of its right
 argument. What happens when you compare vectors of different lengths?
 
-![Inequality testing](../fig/06-rmd-inequality.1.png)
+![Inequality testing](../../fig/06-rmd-inequality.1.png)
 
 When one vector is shorter than the other, it gets *recycled*:
 
-![Inequality testing: results of recycling](../fig/06-rmd-inequality.2.png)
+![Inequality testing: results of recycling](../../fig/06-rmd-inequality.2.png)
 
 In this case R **repeats** `c("a", "c")` as many times as necessary to match `names(x)`, i.e. we get `c("a","c","a","c","a")`. Since the recycled `"a"`
 doesn't match the third element of `names(x)`, the value of `!=` is `TRUE`.
