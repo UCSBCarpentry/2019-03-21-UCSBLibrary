@@ -116,7 +116,7 @@ year_country_gdp <- select(gapminder,year,country,gdpPercap)
 ~~~
 {: .language-r}
 
-![](../fig/13-dplyr-fig1.png)
+![](../../fig/13-dplyr-fig1.png)
 
 If we open up `year_country_gdp` we'll see that it only contains the year,
 country and gdpPercap. Above we used 'normal' grammar, but the strengths of
@@ -242,7 +242,7 @@ You will notice that the structure of the dataframe where we used `group_by()`
 `data.frame` which contains only the rows that correspond to the a particular
 value `continent` (at least in the example above).
 
-![](../fig/13-dplyr-fig2.png)
+![](../../fig/13-dplyr-fig2.png)
 
 ## Using summarize()
 
@@ -261,7 +261,7 @@ gdp_bycontinents <- gapminder %>%
 ~~~
 {: .language-r}
 
-![](../fig/13-dplyr-fig3.png)
+![](../../fig/13-dplyr-fig3.png)
 
 
 ~~~

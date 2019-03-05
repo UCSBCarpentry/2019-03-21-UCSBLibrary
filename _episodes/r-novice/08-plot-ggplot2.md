@@ -55,7 +55,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-lifeExp-vs-gdpPercap-scatter-1.png" title="plot of chunk lifeExp-vs-gdpPercap-scatter" alt="plot of chunk lifeExp-vs-gdpPercap-scatter" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-lifeExp-vs-gdpPercap-scatter-1.png" title="plot of chunk lifeExp-vs-gdpPercap-scatter" alt="plot of chunk lifeExp-vs-gdpPercap-scatter" style="display: block; margin: auto;" />
 
 So the first thing we do is call the `ggplot` function. This function lets R
 know that we're creating a new plot, and any of the arguments we give the
@@ -80,7 +80,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp))
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 
 We need to tell `ggplot` how we want to visually represent the data, which we
 do by adding a new **geom** layer. In our example, we used `geom_point`, which
@@ -94,7 +94,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-lifeExp-vs-gdpPercap-scatter2-1.png" title="plot of chunk lifeExp-vs-gdpPercap-scatter2" alt="plot of chunk lifeExp-vs-gdpPercap-scatter2" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-lifeExp-vs-gdpPercap-scatter2-1.png" title="plot of chunk lifeExp-vs-gdpPercap-scatter2" alt="plot of chunk lifeExp-vs-gdpPercap-scatter2" style="display: block; margin: auto;" />
 
 > ## Challenge 1
 >
@@ -120,7 +120,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
 > > ~~~
 > > {: .language-r}
 > > 
-> > <img src="../fig/rmd-08-ch1-sol-1.png" title="plot of chunk ch1-sol" alt="plot of chunk ch1-sol" style="display: block; margin: auto;" />
+> > <img src="../../fig/rmd-08-ch1-sol-1.png" title="plot of chunk ch1-sol" alt="plot of chunk ch1-sol" style="display: block; margin: auto;" />
 > >
 > {: .solution}
 {: .challenge}
@@ -149,7 +149,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
 > > ~~~
 > > {: .language-r}
 > > 
-> > <img src="../fig/rmd-08-ch2-sol-1.png" title="plot of chunk ch2-sol" alt="plot of chunk ch2-sol" style="display: block; margin: auto;" />
+> > <img src="../../fig/rmd-08-ch2-sol-1.png" title="plot of chunk ch2-sol" alt="plot of chunk ch2-sol" style="display: block; margin: auto;" />
 > >
 > {: .solution}
 {: .challenge}
@@ -167,7 +167,7 @@ ggplot(data = gapminder, aes(x=year, y=lifeExp, by=country, color=continent)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-lifeExp-line-1.png" title="plot of chunk lifeExp-line" alt="plot of chunk lifeExp-line" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-lifeExp-line-1.png" title="plot of chunk lifeExp-line" alt="plot of chunk lifeExp-line" style="display: block; margin: auto;" />
 
 Instead of adding a `geom_point` layer, we've added a `geom_line` layer. We've
 added the **by** *aesthetic*, which tells `ggplot` to draw a line for each
@@ -183,7 +183,7 @@ ggplot(data = gapminder, aes(x=year, y=lifeExp, by=country, color=continent)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-lifeExp-line-point-1.png" title="plot of chunk lifeExp-line-point" alt="plot of chunk lifeExp-line-point" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-lifeExp-line-point-1.png" title="plot of chunk lifeExp-line-point" alt="plot of chunk lifeExp-line-point" style="display: block; margin: auto;" />
 
 It's important to note that each layer is drawn on top of the previous layer. In
 this example, the points have been drawn *on top of* the lines. Here's a
@@ -196,7 +196,7 @@ ggplot(data = gapminder, aes(x=year, y=lifeExp, by=country)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-lifeExp-layer-example-1-1.png" title="plot of chunk lifeExp-layer-example-1" alt="plot of chunk lifeExp-layer-example-1" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-lifeExp-layer-example-1-1.png" title="plot of chunk lifeExp-layer-example-1" alt="plot of chunk lifeExp-layer-example-1" style="display: block; margin: auto;" />
 
 In this example, the *aesthetic* mapping of **color** has been moved from the
 global plot options in `ggplot` to the `geom_line` layer so it no longer applies
@@ -225,7 +225,7 @@ lines.
 > > ~~~
 > > {: .language-r}
 > > 
-> > <img src="../fig/rmd-08-ch3-sol-1.png" title="plot of chunk ch3-sol" alt="plot of chunk ch3-sol" style="display: block; margin: auto;" />
+> > <img src="../../fig/rmd-08-ch3-sol-1.png" title="plot of chunk ch3-sol" alt="plot of chunk ch3-sol" style="display: block; margin: auto;" />
 > >
 > > The lines now get drawn over the points!
 > >
@@ -244,7 +244,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp, color=continent)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-lifeExp-vs-gdpPercap-scatter3-1.png" title="plot of chunk lifeExp-vs-gdpPercap-scatter3" alt="plot of chunk lifeExp-vs-gdpPercap-scatter3" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-lifeExp-vs-gdpPercap-scatter3-1.png" title="plot of chunk lifeExp-vs-gdpPercap-scatter3" alt="plot of chunk lifeExp-vs-gdpPercap-scatter3" style="display: block; margin: auto;" />
 
 Currently it's hard to see the relationship between the points due to some strong
 outliers in GDP per capita. We can change the scale of units on the x axis using
@@ -260,7 +260,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-axis-scale-1.png" title="plot of chunk axis-scale" alt="plot of chunk axis-scale" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-axis-scale-1.png" title="plot of chunk axis-scale" alt="plot of chunk axis-scale" style="display: block; margin: auto;" />
 
 The `log10` function applied a transformation to the values of the gdpPercap
 column before rendering them on the plot, so that each multiple of 10 now only
@@ -284,7 +284,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-lm-fit-1.png" title="plot of chunk lm-fit" alt="plot of chunk lm-fit" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-lm-fit-1.png" title="plot of chunk lm-fit" alt="plot of chunk lm-fit" style="display: block; margin: auto;" />
 
 We can make the line thicker by *setting* the **size** aesthetic in the
 `geom_smooth` layer:
@@ -296,7 +296,7 @@ ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-lm-fit2-1.png" title="plot of chunk lm-fit2" alt="plot of chunk lm-fit2" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-lm-fit2-1.png" title="plot of chunk lm-fit2" alt="plot of chunk lm-fit2" style="display: block; margin: auto;" />
 
 There are two ways an *aesthetic* can be specified. Here we *set* the **size**
 aesthetic by passing it as an argument to `geom_smooth`. Previously in the
@@ -325,7 +325,7 @@ variables and their visual representation.
 > > ~~~
 > > {: .language-r}
 > > 
-> > <img src="../fig/rmd-08-ch4a-sol-1.png" title="plot of chunk ch4a-sol" alt="plot of chunk ch4a-sol" style="display: block; margin: auto;" />
+> > <img src="../../fig/rmd-08-ch4a-sol-1.png" title="plot of chunk ch4a-sol" alt="plot of chunk ch4a-sol" style="display: block; margin: auto;" />
 > {: .solution}
 {: .challenge}
 
@@ -351,7 +351,7 @@ variables and their visual representation.
 > >~~~
 > >{: .language-r}
 > >
-> ><img src="../fig/rmd-08-ch4b-sol-1.png" title="plot of chunk ch4b-sol" alt="plot of chunk ch4b-sol" style="display: block; margin: auto;" />
+> ><img src="../../fig/rmd-08-ch4b-sol-1.png" title="plot of chunk ch4b-sol" alt="plot of chunk ch4b-sol" style="display: block; margin: auto;" />
 > {: .solution}
 {: .challenge}
 
@@ -384,7 +384,7 @@ ggplot(data = az.countries, aes(x = year, y = lifeExp, color=continent)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-facet-1.png" title="plot of chunk facet" alt="plot of chunk facet" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-facet-1.png" title="plot of chunk facet" alt="plot of chunk facet" style="display: block; margin: auto;" />
 
 The `facet_wrap` layer took a "formula" as its argument, denoted by the tilde
 (~). This tells R to draw a panel for each unique value in the country column
@@ -417,7 +417,7 @@ ggplot(data = az.countries, aes(x = year, y = lifeExp, color=continent)) +
 ~~~
 {: .language-r}
 
-<img src="../fig/rmd-08-theme-1.png" title="plot of chunk theme" alt="plot of chunk theme" style="display: block; margin: auto;" />
+<img src="../../fig/rmd-08-theme-1.png" title="plot of chunk theme" alt="plot of chunk theme" style="display: block; margin: auto;" />
 
 
 ## Exporting the plot
@@ -483,6 +483,6 @@ code to modify!
 > > ~~~
 > > {: .language-r}
 > > 
-> > <img src="../fig/rmd-08-ch5-sol-1.png" title="plot of chunk ch5-sol" alt="plot of chunk ch5-sol" style="display: block; margin: auto;" />
+> > <img src="../../fig/rmd-08-ch5-sol-1.png" title="plot of chunk ch5-sol" alt="plot of chunk ch5-sol" style="display: block; margin: auto;" />
 > {: .solution}
 {: .challenge}
