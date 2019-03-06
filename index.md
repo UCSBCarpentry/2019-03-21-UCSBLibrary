@@ -300,6 +300,15 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
   you will need access to the software described below.
   In addition, you will need an up-to-date web browser.
 </p>
+  <div class="col-md-4">
+    <a class="btn btn-primary" href="shell-novice/setup/index.html">Bash Shell Setup Instructions</a>
+  </div>
+  <div class="col-md-4">
+    <a class="btn btn-primary" href="git-novice/setup/index.html">Git Version Control Setup Instructions</a>
+  </div>
+  <div class="col-md-4">
+    <a class="btn btn-primary" href="r-novice/setup/index.html">"R" Setup Instructions</a>
+  </div>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
