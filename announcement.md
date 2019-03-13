@@ -6,7 +6,7 @@ Software Carpentry aims to help researchers get their work done in less time and
 
 This workshop is targeted at NOVICE users.  The only requirement is that you can successfully install and configure software on your own laptop before arriving at the workshop.  We welcome all UCSB students, faculty, and staff with an interest in learning today’s research computing tools.  
 
-As part of a larger campus Data Science Initiative, the Library is thrilled to collaborate with Enterprise Technology Services' (ETS) Center for Scientific Computing (CSC), and the department of Ecology, Evolution, and Marine Biology (EEMB) to help present this workshop.
+As part of a larger campus Data Science Initiative, the Library is thrilled to collaborate with Enterprise Technology Services (ETS), Center for Scientific Computing (CSC), and the department of Ecology, Evolution, and Marine Biology (EEMB) to help present this workshop.
 
 Registration is required and limited to 25.  For more information, and a link to the registration form, please see:
   https://ucsbcarpentry.github.io/2019-03-21-UCSBLibrary/
