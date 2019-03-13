@@ -7,13 +7,10 @@ address: "University of California, Santa Barbara Library Classroom 1312, Santa 
 country: "U.S.A."     # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "English"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "34.414354, -119.845506"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "April 11-12, 2019"    # human-readable dates for the 
-workshop (e.g., "Feb 17-18, 2020")
+humandate: "March 21-22, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am to 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2019-04-11      # machine-readable start date for the 
-workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2019-04-12        # machine-readable end date for the workshop 
-in YYYY-MM-DD format like 2015-01-02
+startdate: 2019-03-21      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2019-03-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Jon Jablonski", "Ian Lessing", "Greg Janee","Sharon Solis", "Mary Donovan", "Yuan Wu"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 #helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["collaboratory@library.ucsb.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
@@ -39,8 +36,7 @@ eventbrite: "57559855076"          # optional: alphanumeric key for Eventbrite r
 {% endcomment %}
 <p id="Registration">
   <strong>Registration:</strong>
-  Please visit our <a 
-href="https://www.library.ucsb.edu/software-carpentry">UCSB Carpentry Workshop</a> page.
+  This workshop is for FACULTY ONLY. Please register only if you are a faculty member affiliated with UC Santa Barbara. Please make sure that you can commit to the full two days of learning. To learn about future Carpentry workshops and to be added to our mailing list, visit our <a href="https://www.library.ucsb.edu/software-carpentry">UCSB Carpentry Workshop</a> page.
 </p>  
   
 {% comment %}
