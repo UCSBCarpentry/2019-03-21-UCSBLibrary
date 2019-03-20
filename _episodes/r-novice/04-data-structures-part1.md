@@ -421,21 +421,6 @@ a column to be the same basic data type.
 {: .discussion}
 
 You can also make vectors with explicit contents with the combine function:
-
-
-~~~
-combine_vector <- c(2,6,3)
-combine_vector
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 2 6 3
-~~~
-{: .output}
-
 Given what we've learned so far, what do you think the following will produce?
 
 
@@ -448,84 +433,29 @@ This is something called *type coercion*, and it is the source of many surprises
 and the reason why we need to be aware of the basic data types and how R will
 interpret them. When R encounters a mix of types (here numeric and character) to
 be combined into a single vector, it will force them all to be the same
-type. Consider:
+type. 
 
 
 ~~~
-coercion_vector <- c('a', TRUE)
-coercion_vector
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "a"    "TRUE"
-~~~
-{: .output}
-
-
-
-~~~
-another_coercion_vector <- c(0, TRUE)
-another_coercion_vector
+re_quize_vector <- as.numeric(quiz_vector)
+re_quize_vector
 ~~~
 {: .language-r}
 
 
 
 ~~~
-[1] 0 1
+[1] 2 6 3
 ~~~
 {: .output}
+
+
 
 The coercion rules go: `logical` -> `integer` -> `numeric` -> `complex` ->
 `character`, where -> can be read as *are transformed into*. You can try to
 force coercion against this flow using the `as.` functions:
 
 
-~~~
-character_vector_example <- c('0','2','4')
-character_vector_example
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "0" "2" "4"
-~~~
-{: .output}
-
-
-
-~~~
-character_coerced_to_numeric <- as.numeric(character_vector_example)
-character_coerced_to_numeric
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] 0 2 4
-~~~
-{: .output}
-
-
-
-~~~
-numeric_coerced_to_logical <- as.logical(character_coerced_to_numeric)
-numeric_coerced_to_logical
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] FALSE  TRUE  TRUE
-~~~
-{: .output}
 
 As you can see, some surprising things can happen when R forces one basic data
 type into another! Nitty-gritty of type coercion aside, the point is: if your
@@ -564,7 +494,7 @@ cats$likes_string
 
 
 ~~~
-[1]  TRUE FALSE  TRUE
+[1]  TRUE FALSE TRUE
 ~~~
 {: .output}
 
@@ -572,96 +502,33 @@ The combine function, `c()`, will also append things to an existing vector:
 
 
 ~~~
-ab_vector <- c('a', 'b')
-ab_vector
+re_quiz_vector <- c(re_quiz_vector, 5)
+re_quiz_vector
 ~~~
 {: .language-r}
 
 
 
 ~~~
-[1] "a" "b"
+[1] 2 6 3 5
 ~~~
 {: .output}
 
 
-
-~~~
-combine_example <- c(ab_vector, 'SWC')
-combine_example
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "a"   "b"   "SWC"
-~~~
-{: .output}
-
-You can also make series of numbers:
-
-
-~~~
-mySeries <- 1:10
-mySeries
-~~~
-{: .language-r}
-
-
-
-~~~
- [1]  1  2  3  4  5  6  7  8  9 10
-~~~
-{: .output}
-
-
-
-~~~
-seq(10)
-~~~
-{: .language-r}
-
-
-
-~~~
- [1]  1  2  3  4  5  6  7  8  9 10
-~~~
-{: .output}
-
-
-
-~~~
-seq(1,10, by=0.1)
-~~~
-{: .language-r}
-
-
-
-~~~
- [1]  1.0  1.1  1.2  1.3  1.4  1.5  1.6  1.7  1.8  1.9  2.0  2.1  2.2  2.3
-[15]  2.4  2.5  2.6  2.7  2.8  2.9  3.0  3.1  3.2  3.3  3.4  3.5  3.6  3.7
-[29]  3.8  3.9  4.0  4.1  4.2  4.3  4.4  4.5  4.6  4.7  4.8  4.9  5.0  5.1
-[43]  5.2  5.3  5.4  5.5  5.6  5.7  5.8  5.9  6.0  6.1  6.2  6.3  6.4  6.5
-[57]  6.6  6.7  6.8  6.9  7.0  7.1  7.2  7.3  7.4  7.5  7.6  7.7  7.8  7.9
-[71]  8.0  8.1  8.2  8.3  8.4  8.5  8.6  8.7  8.8  8.9  9.0  9.1  9.2  9.3
-[85]  9.4  9.5  9.6  9.7  9.8  9.9 10.0
-~~~
-{: .output}
 
 We can ask a few questions about vectors:
 
 
 ~~~
-sequence_example <- seq(10)
-head(sequence_example, n=2)
+
+head(re_quiz_vector, n=2)
 ~~~
 {: .language-r}
 
 
 
 ~~~
-[1] 1 2
+[1] 2 6
 ~~~
 {: .output}
 
@@ -722,6 +589,7 @@ typeof(sequence_example)
 {: .output}
 
 Finally, you can give names to elements in your vector:
+You can also make series of numbers:
 
 
 ~~~
