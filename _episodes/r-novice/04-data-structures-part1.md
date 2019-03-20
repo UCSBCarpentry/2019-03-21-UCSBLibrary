@@ -23,7 +23,7 @@ source: Rmd
 
 One of R's most powerful features is its ability to deal with tabular data -
 such as you may already have in a spreadsheet or a CSV file. Let's start by
-making a toy dataset in your `data/` directory, called `feline-data.csv`:
+making a toy dataset in your `data/` directory, called `data/feline.csv`:
 
 
 ~~~
@@ -45,7 +45,7 @@ tabby,3.2,1
 
 > ## Tip: Editing Text files in R
 >
-> Alternatively, you can create `data/feline-data.csv` using a text editor (Nano),
+> Alternatively, you can create `data/feline.csv` using a text editor (Nano),
 > or within RStudio with the **File -> New File -> Text File** menu item.
 {: .callout}
 
@@ -53,7 +53,7 @@ We can load this into R via the following:
 
 
 ~~~
-cats <- read.csv(file = "data/feline-data.csv")
+cats <- read.csv(file = "data/feline.csv")
 cats
 ~~~
 {: .language-r}
@@ -246,7 +246,7 @@ complicated our analyses become, all data in R is interpreted as one of these
 basic data types. This strictness has some really important consequences.
 
 A user has added details of another cat. This information is in the file
-`feline2.csv`.
+`data/feline2.csv`.
 
 
 
@@ -264,7 +264,7 @@ Load the new cats data like before, and check what type of data we find in the
 
 
 ~~~
-cats2 <- read.csv(file="data/feline-data_v2.csv")
+cats2 <- read.csv(file="data/feline2.csv")
 typeof(cats$weight)
 ~~~
 {: .language-r}
