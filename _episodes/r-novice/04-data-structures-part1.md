@@ -23,7 +23,7 @@ source: Rmd
 
 One of R's most powerful features is its ability to deal with tabular data -
 such as you may already have in a spreadsheet or a CSV file. Let's start by
-making a toy dataset in your `data/` directory, called `data/feline.csv`:
+making a toy dataset in your `data/` directory, called `feline.csv`:
 
 
 ~~~
@@ -426,8 +426,18 @@ Given what we've learned so far, what do you think the following will produce?
 
 ~~~
 quiz_vector <- c(2,6,'3')
+quiz_vector
 ~~~
 {: .language-r}
+
+
+
+~~~
+[1] "2" "6" "3"
+~~~
+{: .output}
+
+
 
 This is something called *type coercion*, and it is the source of many surprises
 and the reason why we need to be aware of the basic data types and how R will
@@ -535,35 +545,35 @@ head(re_quiz_vector, n=2)
 
 
 ~~~
-tail(sequence_example, n=4)
+tail(re_quiz_vector, n=3)
 ~~~
 {: .language-r}
 
 
 
 ~~~
-[1]  7  8  9 10
+[1]  6  3  5
 ~~~
 {: .output}
 
 
 
 ~~~
-length(sequence_example)
+length(re_quiz_vector)
 ~~~
 {: .language-r}
 
 
 
 ~~~
-[1] 10
+[1] 4
 ~~~
 {: .output}
 
 
 
 ~~~
-class(sequence_example)
+class(re_quiz_vector)
 ~~~
 {: .language-r}
 
@@ -577,7 +587,7 @@ class(sequence_example)
 
 
 ~~~
-typeof(sequence_example)
+typeof(re_quiz_vector)
 ~~~
 {: .language-r}
 
@@ -594,7 +604,7 @@ You can also make series of numbers:
 
 ~~~
 my_example <- 5:8
-names(my_example) <- c("a", "b", "c", "d")
+names(my_example) <- a:d
 my_example
 ~~~
 {: .language-r}
