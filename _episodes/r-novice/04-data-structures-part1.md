@@ -28,7 +28,7 @@ making a toy dataset in your `data/` directory, called `feline.csv`:
 
 ~~~
 cats <- data.frame(coat = c("calico", "black", "tabby"), 
-                    weight = c(2.1, 5.0,3.2), 
+                    weight = c(2.1, 5.0, 3.2), 
                     likes_string = c(1, 0, 1))
 write.csv(x = cats, file = "data/feline.csv", row.names = FALSE)
 ~~~
@@ -92,21 +92,6 @@ cats$weight
 
 ~~~
 [1] 2.1 5.0 3.2
-~~~
-{: .output}
-
-
-
-~~~
-cats$coat
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] calico black  tabby 
-Levels: black calico tabby
 ~~~
 {: .output}
 
