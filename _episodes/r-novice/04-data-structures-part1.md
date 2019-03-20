@@ -30,10 +30,10 @@ making a toy dataset in your `data/` directory, called `feline-data.csv`:
 cats <- data.frame(coat = c("calico", "black", "tabby"), 
                     weight = c(2.1, 5.0,3.2), 
                     likes_string = c(1, 0, 1))
-write.csv(x = cats, file = "data/feline-data.csv", row.names = FALSE)
+write.csv(x = cats, file = "data/feline.csv", row.names = FALSE)
 ~~~
 {: .language-r}
-The contents of the new file, `feline-data.csv`:
+The contents of the new file, `feline.csv`:
 
 ~~~
 coat,weight,likes_string
@@ -126,21 +126,6 @@ cats$weight + 2
 ~~~
 {: .output}
 
-
-
-~~~
-paste("My cat is", cats$coat)
-~~~
-{: .language-r}
-
-
-
-~~~
-[1] "My cat is calico" "My cat is black"  "My cat is tabby" 
-~~~
-{: .output}
-
-But what about
 
 
 ~~~
@@ -261,14 +246,8 @@ complicated our analyses become, all data in R is interpreted as one of these
 basic data types. This strictness has some really important consequences.
 
 A user has added details of another cat. This information is in the file
-`data/feline-data_v2.csv`.
+`feline2.csv`.
 
-
-
-~~~
-file.show("data/feline-data_v2.csv")
-~~~
-{: .language-r}
 
 
 ~~~
@@ -285,7 +264,7 @@ Load the new cats data like before, and check what type of data we find in the
 
 
 ~~~
-cats <- read.csv(file="data/feline-data_v2.csv")
+cats2 <- read.csv(file="data/feline-data_v2.csv")
 typeof(cats$weight)
 ~~~
 {: .language-r}
@@ -344,26 +323,7 @@ class(cats)
 {: .output}
 
 In order to successfully use our data in R, we need to understand what the basic
-data structures are, and how they behave. For now, let's remove that extra line
-from our cats data and reload it, while we investigate this behavior further:
-
-feline-data.csv:
-
-```
-coat,weight,likes_string
-calico,2.1,1
-black,5.0,0
-tabby,3.2,1
-```
-
-And back in RStudio:
-
-
-~~~
-cats <- read.csv(file="data/feline-data.csv")
-~~~
-{: .language-r}
-
+data structures are, and how they behave.
 
 
 
